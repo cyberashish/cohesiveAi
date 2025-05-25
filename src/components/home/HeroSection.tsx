@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Button } from "../ui/button";
-// import dashboardSkeleton from "@/assets/images/background/dashboard.png";
+import dashboardSkeleton from "@/assets/images/background/dashboard.png";
 import company1 from "@/assets/images/companies/cohesive_anago.png"; 
 import company2 from "@/assets/images/companies/cohesive_bear_landscaping.png"; 
 import company3 from "@/assets/images/companies/cohesive_corporate_cleaning.png"; 
@@ -102,9 +102,9 @@ export default function HeroSection() {
     </div>
     <div className="relative mash-bg" >
       <img src={mashPattern} alt="" className="absolute -top-50 z-10" />
-    <div className="flex justify-center w-full min-h-96 bg-red-300">
+    <div className="flex justify-center w-full min-h-72">
         <div className="lg:w-5/12 mt-14 w-full">
-        {/* <img src={dashboardSkeleton} alt="" className="relative z-50" /> */}
+        <img src={dashboardSkeleton} alt="" className="relative z-50" />
         </div>
     </div>
     {/* Customers */}
