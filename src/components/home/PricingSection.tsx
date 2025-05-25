@@ -29,7 +29,7 @@ export default function PricingSection() {
 
   return (
     <>
-      <div data-aos="fade-up" id="pricing" className="py-12 lg:pt-12 pt-8 w-full bg-background flex flex-col items-center">
+      <div id="pricing" className="py-12 lg:pt-12 pt-8 w-full bg-background flex flex-col items-center">
         <div className="lg:w-6/12 w-full flex flex-col gap-2 items-center">
           <span className="py-1.5 px-4 flex items-center gap-2 rounded-full bg-white/20 text-xs font-medium text-white">
             <Icon icon="solar:tag-price-linear" width={16} height={16} />
