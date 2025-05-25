@@ -108,7 +108,7 @@ export default function HeroSection() {
         </div>
     </div>
     {/* Customers */}
-    <div className="bg-background py-8 w-full flex justify-center items-center relative z-50">
+    <div data-aos="fade-up" className="bg-background py-8 w-full flex justify-center items-center relative z-50">
       <div className="lg:w-7/12 w-full overflow-hidden relative marquee-wrapper">
        <div className="marquee-content flex gap-12 flex-nowrap" >
         {
