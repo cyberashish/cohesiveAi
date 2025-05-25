@@ -1,12 +1,8 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Button } from "../ui/button";
 import {v4 as uuidv4} from "uuid";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 export default function PricingSection() {
-
-  AOS.init();
 
     const Benefits = [
         {
