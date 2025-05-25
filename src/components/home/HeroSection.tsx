@@ -102,9 +102,9 @@ export default function HeroSection() {
     </div>
     <div className="relative mash-bg" >
       <img src={mashPattern} alt="" className="absolute -top-50 z-10" />
-    <div className="flex justify-center w-full min-h-20">
+    <div className="flex justify-center w-full min-h-96 bg-red-300">
         <div className="lg:w-5/12 mt-14 w-full">
-        <img src={dashboardSkeleton} alt="" className="relative z-50" />
+        {/* <img src={dashboardSkeleton} alt="" className="relative z-50" /> */}
         </div>
     </div>
     {/* Customers */}
