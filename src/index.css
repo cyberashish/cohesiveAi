@@ -1,0 +1,113 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "Inter", sans-serif; 
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: var(--background);
+  --color-primary: var(--primary);
+
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(0.1041 0.028 247.9);
+  --primary: oklch(0.4795 0.2484 266.26);
+}
+
+
+@layer base {
+  body {
+    @apply bg-background ;
+  }
+}
+
+.bg-pattern{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/src/assets/images/background/patternBg.png") ;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.footer-topbar{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 49.0990990990991%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.2;
+}
+html {
+  scroll-behavior: smooth;
+}
+#features {
+  scroll-margin-top: 40px; /* adjusts position when scrolled into view */
+}
+#pricing {
+  scroll-margin-top: 40px; /* adjusts position when scrolled into view */
+}
+
+ /* Fading effect on edges */
+ .marquee-wrapper::before,
+ .marquee-wrapper::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   width: 100px;
+   height: 100%;
+   z-index: 2;
+   pointer-events: none;
+ }
+
+ .marquee-wrapper::before {
+   left: 0;
+   background: linear-gradient(to right, #000 0%, transparent 100%);
+ }
+
+ .marquee-wrapper::after {
+   right: 0;
+   background: linear-gradient(to left, #000 0%, transparent 100%);
+ }
+
+.marquee-content {
+  animation: marquee2 45s linear infinite;
+}
+
+@keyframes marquee2 {
+  0% {
+    transform: translate3d(-2086px, 0, 0);
+}
+100% {
+    transform: translateZ(0);
+}
+}
+
+
+/* Container */
+.marquee-wrapper {
+  opacity: 1;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 15%, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%);
+  overflow: hidden;
+}
+
+.feature-pattern{
+  background-image: url("/src/assets/images/features/featurePatternBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* .mash-bg{
+  background-image: url("/src/assets/images/features/featurePatternBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
