@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Button } from "../ui/button";
-import dashboardSkeleton from "@/assets/images/background/dashboard.png";
+// import dashboardSkeleton from "@/assets/images/background/dashboard.png";
 import company1 from "@/assets/images/companies/cohesive_anago.png"; 
 import company2 from "@/assets/images/companies/cohesive_bear_landscaping.png"; 
 import company3 from "@/assets/images/companies/cohesive_corporate_cleaning.png"; 
