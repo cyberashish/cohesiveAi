@@ -53,7 +53,7 @@ export default function HeroSection() {
     <>
     <div className="flex justify-center mt-12">
       <div className="flex flex-col gap-5 items-center text-center lg:w-5/12 w-full">
-        <span data-aos="fade-right" className="py-1.5 px-4 flex items-center gap-2 rounded-full bg-white/20 text-xs font-medium text-white">
+        <span  className="py-1.5 px-4 flex items-center gap-2 rounded-full bg-white/20 text-xs font-medium text-white">
           <Icon
             icon="solar:users-group-two-rounded-broken"
             width={16}
@@ -61,7 +61,7 @@ export default function HeroSection() {
           />
           Outreach on Auto-Pilot
         </span>
-        <div data-aos="fade-left" className="flex flex-col items-center gap-2">
+        <div className="flex flex-col items-center gap-2">
           <h5 className="text-5xl font-medium text-white">
             Automate local business sales
           </h5>
@@ -70,7 +70,7 @@ export default function HeroSection() {
             businesses. Fully done for you on auto-pilot.
           </p>
         </div>
-        <div data-aos="fade-up" className="flex items-center justify-center gap-4 mt-4 relative z-50">
+        <div className="flex items-center justify-center gap-4 mt-4 relative z-50">
           <Button asChild>
             <a
               target="_blank"
